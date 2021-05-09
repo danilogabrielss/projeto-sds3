@@ -3,6 +3,8 @@ import DonutChart from "components/DonutChart";
 import DataTable from "components/DataTable";
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
+import 'bootstrap/dist/css/bootstrap.css';
+
 function DashBoard() {
     return (
         <>
