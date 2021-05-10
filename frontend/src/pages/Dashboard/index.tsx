@@ -8,23 +8,33 @@ import 'bootstrap/dist/css/bootstrap.css';
 function DashBoard() {
     return (
         <>
-            <NavBar />
-            <h1 className="text-primary py-3">Dashborad de Vendas</h1>
-            <div className="row px-3">
-                <div className=" col=-sm-6">
-                    <h5 className="text-center text-secondary">Taxa de sucesso</h5>
-                    <BarChart />
+            <div>
+                <NavBar />
+                <div className="container" >
+                    <h1 className="text-primary">Dasboard de Vendas</h1>
+
+                    <div className="row px-3">
+                        <div className="col-sm-6">
+
+                            <h5 className="text-center text-secondary">Taxa de vendas (%)</h5>
+                            <BarChart />
+
+                        </div>
+                        <div className="col-sm-6">
+
+                            <h5 className="text-center text-secondary">Todas as Vendas</h5>
+                            <DonutChart />
+                        </div>
+                    </div>
+                    <div className="py-3">
+                        <h2 className="text-primary">Todas Vendas</h2>
+                    </div>
+
+                    <DataTable />
+
                 </div>
-                <div className=" col=-sm-6">
-                    <h5 className="text-center text-secondary">Todas vendas</h5>
-                    <DonutChart />
-                </div>
+                <Footer />
             </div>
-            <div className="py-3">
-                <h2 className="text-primary">Todas as vendas</h2>
-            </div>
-            <DataTable />
-            <Footer />
         </>
     );
 }
